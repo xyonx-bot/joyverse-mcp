@@ -221,8 +221,9 @@ class TestRunPySmoke:
         import run
         assert {s.name for s in run.server._tool_schemas} == {
             "get_profile", "update_profile", "get_memory",
-            "add_memory_trait", "update_focus", "get_data", "update_data"}
-
+            "add_memory_trait", "update_focus", "get_data", "update_data",
+            "get_bio", "update_bio"
+        }
     def test_run_module_carries_instructions(self):
         import run
         assert run.server.instructions
